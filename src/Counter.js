@@ -24,6 +24,7 @@ export class Counter  extends React.Component{
         return (
             <div>
             <button onClick={this.handleButton}>Click Me</button>
+            <button onClick={() => this.props.handleRemove(this.props.id)}>Delete</button>
             <p className={this.getClass()}>{this.state.value}</p>
             </div>
         );
